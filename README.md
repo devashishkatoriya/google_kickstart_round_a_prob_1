@@ -28,12 +28,19 @@ Test set 2 (Hidden)
 Sample Input:
 
 3
+
 4 3
+
 3 1 9 100
+
 6 2
+
 5 5 1 2 3 4
+
 5 5
+
 7 7 1 7 7
+
 
 Sample Output:
 
