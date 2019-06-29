@@ -1,11 +1,11 @@
 
 fn main() {
-    let n = 4;
-    let p = 3;
-    let mut arr = [3, 1, 9, 100];
+    let n = 5;
+    let p = 5;
+    let mut arr = [7, 7, 1, 7, 7];
     println!("Arr before sort: {:?}", arr);
 
-    for i in 0..n {
+    for _ in 0..n {
         for j in 0..n - 1 {
             if arr[j] < arr[j + 1] {
                 let temp = arr[j];
@@ -24,7 +24,7 @@ fn main() {
         if j + p <= n {
             target = arr[j];
             need = 0;
-            for i in j..n {
+            for i in j..j + p {
                 need = need + target - arr[i];
             }
             if need <= prev_need {
@@ -37,5 +37,5 @@ fn main() {
 
 
 // Case 1 - Working
-// Case 2 - Not Checked
-// Case 3 - Not Checked
+// Case 2 - Working
+// Case 3 - Working
